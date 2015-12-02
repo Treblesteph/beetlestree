@@ -41,7 +41,7 @@
      display: none;
 }
 
-.myButton {
+.collapeButton {
  background-color:#7892c2;
  -moz-border-radius:42px;
  -webkit-border-radius:42px;
@@ -56,10 +56,33 @@
  text-decoration:none;
  text-shadow:0px 0px 0px #283966;
 }
-.myButton:hover {
+.collapeButton:hover {
  background-color:#ffd54f;
 }
-.myButton:active {
+.collapeButton:active {
  position:relative;
  top:1px;
+}
+
+.optionButton {
+background-color:#ffe082;
+-moz-border-radius:42px;
+-webkit-border-radius:42px;
+border-radius:42px;
+border:2px solid #4e6096;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:18px;
+padding:16px 17px;
+text-decoration:none;
+text-shadow:0px 0px 0px #283966;
+}
+.collapeButton:hover {
+background-color:#ffd54f;
+}
+.collapeButton:active {
+position:relative;
+top:1px;
 }
