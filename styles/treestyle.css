@@ -24,7 +24,7 @@ coral: #F24E4E
 }
 
 .overlay{
-    background-color:#EEE;
+  background-color:#EEE;
 }
 
 .node circle {
@@ -51,47 +51,49 @@ coral: #F24E4E
 }
 
 .ghostCircle.show{
-    display:block;
+  display:block;
 }
 
 .ghostCircle, .activeDrag .ghostCircle{
-     display: none;
+   display: none;
 }
 
 .collapeButton {
- background-color:#F2C94E;
- display:inline-block;
- cursor:pointer;
- color:#ffffff;
- font-family:Arial;
- font-size:18px;
- padding:6px 5px;
- text-decoration:none;
- text-shadow:0px 0px 0px #bb9b3a;
+  height: 122px;
+  background-color:#F2C94E;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:18px;
+  padding:6px 5px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #bb9b3a;
 }
 .collapeButton:hover {
- background-color:rgba(#f2c94e, 0.6);
+  background-color:rgba(#f2c94e, 0.6);
 }
 .collapeButton:active {
- position:relative;
- top:1px;
+  position:relative;
+  top:1px;
 }
 
 .optionButton {
-background-color:#F78145;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-font-family:Arial;
-font-size:18px;
-padding:6px 5px;
-text-decoration:none;
-text-shadow:0px 0px 0px #ab5930;
+  height: 122px;
+  background-color:#F78145;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:18px;
+  padding:6px 5px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #ab5930;
 }
 .collapeButton:hover {
-background-color:rgba(#f78145, 0.6);
+  background-color:rgba(#f78145, 0.6);
 }
 .collapeButton:active {
-position:relative;
-top:1px;
+  position:relative;
+  top:1px;
 }
