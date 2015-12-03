@@ -5,31 +5,58 @@
     <link href="assets/favicon.png" rel="icon" type="image/png"/>
     <link href="styles/treestyle.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="scripts/d3tree.js"></script>
 
   </head>
   <body>
-    <header>
-      <nav class="top-nav">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#" class="collapeButton">collapse all levels</a>
-            <a href="#" class="collapeButton">collapse suborders</a>
-            <a href="#" class="collapeButton">collapse infraorders</a>
-            <a href="#" class="collapeButton">collapse superfamilies</a>
+    <header class="teal darken-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <nav class="teal darken-3">
+            <div class="nav-wrapper">
+              <form>
+                <div class="input-field">
+                  <input id="search" placeholder="search taxonomy" type="search" required>
+                  <label for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </div>
+          </nav>
 
-            <a href="#" class="optionButton">some option</a>
+          <a href="#!" class="btn-floating tooltipped waves-effect waves-circle waves-yellow teal darken-3"
+             data-position="top" data-delay="50" data-tooltip="more info" style="position: absolute; bottom: 45px; left:24px;">
+            <i class="material-icons">help_outline</i>
+          </a>
+
+          <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large teal darken-3">
+              <i class="large mdi-navigation-menu"></i>
+            </a>
+            <ul>
+              <li><a class="btn-floating tooltipped lime darken-2" data-position="top" data-delay="50" data-tooltip="expand/collapse all">
+                    <i class="material-icons">add</i></a></li>
+              <li><a class="btn-floating tooltipped amber lighten-2" data-position="top" data-delay="50" data-tooltip="expand/collapse suborders">
+                    <i class="material-icons">add</i></a></li>
+              <li><a class="btn-floating tooltipped deep-orange lighten-1" data-position="top" data-delay="50" data-tooltip="expand/collapse infraorders">
+                    <i class="material-icons">add</i></a></li>
+              <li><a class="btn-floating tooltipped red lighten-1"  data-position="top" data-delay="50" data-tooltip="expand/collapse superfamilies">
+                    <i class="material-icons">add</i></a></li>
+            </ul>
           </div>
+
         </div>
-      </nav>
+      </div>
     </header>
     <main>
     </main>
+    <div id="tree-container">
 
-    <div id="tree-container"></div>
+    </div>
   </body>
 </html>
