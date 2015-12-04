@@ -48,6 +48,11 @@ coral: #F24E4E red lighten-1 #ef5350
   color: #fff;
 }
 
+.info-button {
+  position: absolute !important;
+  right: 24px;
+}
+
 .node {
   cursor: pointer;
 }

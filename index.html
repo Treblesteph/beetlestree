@@ -17,6 +17,13 @@
     <header class="teal darken-3">
       <div class="container">
         <div class="nav-wrapper" id="search-outer-wrapper">
+
+          <!-- Modal trigger -->
+          <a href="#info_modal" class="info-button btn-floating modal-trigger tooltipped waves-effect waves-yellow teal darken-2"
+             data-position="bottom" data-delay="50" data-tooltip="more info">
+            <i class="material-icons">help_outline</i>
+          </a>
+
           <nav class="teal darken-2 z-depth-1" id="search-inner-wrapper">
             <div class="nav-wrapper">
               <form id="search-form">
@@ -29,15 +36,20 @@
             </div>
           </nav>
 
-          <!-- Modal trigger -->
-          <a href="#modal1" class="btn-floating tooltipped waves-effect waves-circle modal-trigger waves-yellow teal darken-3"
-             data-position="top" data-delay="50" data-tooltip="more info" style="position: absolute; bottom: 45px; left:24px;">
-            <i class="material-icons">help_outline</i>
-          </a>
+          <!-- Modal Structure -->
+          <div id="info_modal" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
 
-          <!-- Tree tools -->
+          <!-- Tree tools buttons -->
           <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
-            <a class="btn-floating btn-large teal darken-3">
+            <a class="btn-floating btn-large tooltipped teal darken-3" data-position="top" data-delay="50" data-tooltip="tree tools">
               <i class="large mdi-navigation-menu"></i>
             </a>
             <ul>
@@ -56,21 +68,15 @@
       </div>
     </header>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-      </div>
-    </div>
-
     <main>
     </main>
     <div id="tree-container">
 
     </div>
+    <script>
+      $(document).ready(function(){
+        $('.modal-trigger').leanModal();
+      });
+    </script>
   </body>
 </html>
