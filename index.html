@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="assets/favicon.png" rel="icon" type="image/png"/>
+    <link href="assets/beetlefav.png" rel="icon" type="image/png"/>
     <link href="styles/treestyle.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,36 +16,38 @@
   <body>
     <header class="teal darken-3">
       <div class="container">
-        <div class="nav-wrapper">
-          <nav class="teal darken-3">
+        <div class="nav-wrapper" id="search-outer-wrapper">
+          <nav class="teal darken-2 z-depth-1" id="search-inner-wrapper">
             <div class="nav-wrapper">
-              <form>
+              <form id="search-form">
                 <div class="input-field">
-                  <input id="search" placeholder="search taxonomy" type="search" required>
-                  <label for="search"><i class="material-icons">search</i></label>
+                  <input class="teal darken-2" id="search" placeholder="search taxonomy" type="search" required>
+                  <label for="search"><i class="material-icons" id="search-icon">search</i></label>
                   <i class="material-icons">close</i>
                 </div>
               </form>
             </div>
           </nav>
 
-          <a href="#!" class="btn-floating tooltipped waves-effect waves-circle waves-yellow teal darken-3"
+          <!-- Modal trigger -->
+          <a href="#modal1" class="btn-floating tooltipped waves-effect waves-circle modal-trigger waves-yellow teal darken-3"
              data-position="top" data-delay="50" data-tooltip="more info" style="position: absolute; bottom: 45px; left:24px;">
             <i class="material-icons">help_outline</i>
           </a>
 
+          <!-- Tree tools -->
           <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
             <a class="btn-floating btn-large teal darken-3">
               <i class="large mdi-navigation-menu"></i>
             </a>
             <ul>
-              <li><a class="btn-floating tooltipped lime darken-2" data-position="top" data-delay="50" data-tooltip="expand/collapse all">
+              <li><a class="btn-floating tooltipped lime darken-2" data-position="top" data-delay="50" data-tooltip="collapse all">
                     <i class="material-icons">add</i></a></li>
-              <li><a class="btn-floating tooltipped amber lighten-2" data-position="top" data-delay="50" data-tooltip="expand/collapse suborders">
+              <li><a class="btn-floating tooltipped amber lighten-2" data-position="top" data-delay="50" data-tooltip="collapse suborders">
                     <i class="material-icons">add</i></a></li>
-              <li><a class="btn-floating tooltipped deep-orange lighten-1" data-position="top" data-delay="50" data-tooltip="expand/collapse infraorders">
+              <li><a class="btn-floating tooltipped deep-orange lighten-1" data-position="top" data-delay="50" data-tooltip="collapse infraorders">
                     <i class="material-icons">add</i></a></li>
-              <li><a class="btn-floating tooltipped red lighten-1"  data-position="top" data-delay="50" data-tooltip="expand/collapse superfamilies">
+              <li><a class="btn-floating tooltipped red lighten-1"  data-position="top" data-delay="50" data-tooltip="collapse superfamilies">
                     <i class="material-icons">add</i></a></li>
             </ul>
           </div>
@@ -53,6 +55,18 @@
         </div>
       </div>
     </header>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+
     <main>
     </main>
     <div id="tree-container">

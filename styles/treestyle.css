@@ -13,6 +13,41 @@ coral: #F24E4E red lighten-1 #ef5350
   width: 100%;
 }
 
+#search-outer-wrapper {
+  padding: 10px;
+}
+
+#search-inner-wrapper {
+  height: 36px;
+  box-shadow: none !important;
+}
+
+#search-form, #search {
+  height: 36px;
+  margin: 0;
+  line-height: normal;
+}
+
+#search-form .input-field {
+  height: 36px;
+  margin: 0;
+  line-height: normal;
+  padding-left: 3px;
+}
+
+#search-form .input-field input[type=search]:focus {
+  color: #fff;
+}
+
+#search-form .material-icons {
+  padding-top: 6px;
+  padding-left: 1px;
+  width: 24px;
+  height: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
 .node {
   cursor: pointer;
 }
