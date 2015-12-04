@@ -53,6 +53,14 @@ coral: #F24E4E red lighten-1 #ef5350
   right: 24px;
 }
 
+.profilepic-wrapper {
+  padding: 0px;
+}
+
+.infotext-wrapper {
+  padding-left: 230px;
+}
+
 .node {
   cursor: pointer;
 }
