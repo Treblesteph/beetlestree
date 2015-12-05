@@ -1,16 +1,44 @@
 /*
 Colour scheme:
-dark green: #11644D teal darken-3 #00695c
-light green: #A0B046 lime darken-2 #afb42b
-yellow: #F2C94E amber lighten-2 #ffd54f
-orange: #F78145 deep-orange lighten-1 #ff7043
-coral: #F24E4E red lighten-1 #ef5350
+dark green: teal darken-3 #00695c
+light green: lime darken-2 #afb42b
+yellow: amber lighten-2 #ffd54f
+orange: deep-orange lighten-1 #ff7043
+coral: red lighten-1 #ef5350
 */
 
 .top-nav {
   box-shadow: none;
   color: #fff;
   width: 100%;
+}
+
+#sidenav-overlay {
+  display: none;
+}
+
+.side-nav {
+  padding-top: 36px;
+}
+
+.side-nav-button {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+}
+
+.head-container {
+  width:inherit;
+  z-index: 1999;
+}
+
+.material-icons {
+  color: white;
+}
+
+.drag-target {
+  width: 0px !important;
+  height: 0px;
 }
 
 #search-outer-wrapper {

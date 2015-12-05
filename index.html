@@ -15,14 +15,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <header class="teal darken-3">
-      <div class="container">
-        <div class="nav-wrapper" id="search-outer-wrapper">
+
+    <header>
+      <div class="head-container teal darken-3">
+
+        <!-- Side bar button -->
+        <a href="#" data-activates="slide-out" class="button-collapse side-nav-button show-on-large">
+          <i class="material-icons">photo_camera</i>
+        </a>
+
+        <div class="nav-wrapper container" id="search-outer-wrapper">
 
           <!-- Modal trigger -->
           <a href="#info_modal" class="info-button btn-floating modal-trigger tooltipped waves-effect waves-yellow teal darken-2"
              data-position="bottom" data-delay="50" data-tooltip="more info">
-            <i class="material-icons">help_outline</i>
+            <i class="material-icons">info_outline</i>
           </a>
 
           <nav class="teal darken-2 z-depth-1" id="search-inner-wrapper">
@@ -87,25 +94,33 @@
             </a>
             <ul>
               <li><a class="btn-floating tooltipped lime darken-2" data-position="top" data-delay="50" data-tooltip="collapse all">
-                    <i class="material-icons">add</i></a></li>
+                    <i class="material-icons">zoom_out</i></a></li>
               <li><a class="btn-floating tooltipped amber lighten-2" data-position="top" data-delay="50" data-tooltip="collapse suborders">
-                    <i class="material-icons">add</i></a></li>
+                    <i class="material-icons">zoom_out</i></a></li>
               <li><a class="btn-floating tooltipped deep-orange lighten-1" data-position="top" data-delay="50" data-tooltip="collapse infraorders">
-                    <i class="material-icons">add</i></a></li>
+                    <i class="material-icons">zoom_out</i></a></li>
               <li><a class="btn-floating tooltipped red lighten-1"  data-position="top" data-delay="50" data-tooltip="collapse superfamilies">
-                    <i class="material-icons">add</i></a></li>
+                    <i class="material-icons">zoom_out</i></a></li>
             </ul>
           </div>
-
         </div>
       </div>
     </header>
 
     <main>
+
+      <!-- Side bar -->
+      <ul id="slide-out" class="side-nav fixed">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+      </ul>
     </main>
     <div id="tree-container">
 
     </div>
+
+    <!-- Initialize collapse button for sidebar -->
+    <script>$(".button-collapse").sideNav();</script>
 
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script>
