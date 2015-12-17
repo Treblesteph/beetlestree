@@ -18,7 +18,12 @@ coral: red lighten-1 #ef5350
 }
 
 .side-nav {
-  padding-top: 36px;
+  margin-top: 56px !important;
+  overflow-x: visible !important;
+}
+
+.side-nav li {
+  padding: 0px !important;
 }
 
 .side-nav-button {
@@ -28,8 +33,7 @@ coral: red lighten-1 #ef5350
 }
 
 .head-container {
-  width:inherit;
-  z-index: 1999;
+  width: inherit;
 }
 
 .material-icons {

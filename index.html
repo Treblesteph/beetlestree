@@ -108,11 +108,32 @@
     </header>
 
     <main>
-
       <!-- Side bar -->
-      <ul id="slide-out" class="side-nav fixed">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder1.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder2.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder3.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder4.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder5.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder6.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder7.jpg">
+        </li>
+        <li>
+          <img class="materialboxed" width="240" src="images/img_placeholder8.jpg">
+        </li>
       </ul>
     </main>
     <div id="tree-container">
@@ -122,11 +143,23 @@
     <!-- Initialize collapse button for sidebar -->
     <script>$(".button-collapse").sideNav();</script>
 
+    <!-- Initialise GitHub button -->
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Initialize modal trigger -->
     <script>
       $(document).ready(function(){
         $('.modal-trigger').leanModal();
       });
     </script>
+
+    <!-- Initialize material box for dynamically loaded images -->
+    <script>
+      $(document).ready(function() {
+        $('.materialboxed').materialbox();
+      });
+    </script>
+
+
   </body>
 </html>
