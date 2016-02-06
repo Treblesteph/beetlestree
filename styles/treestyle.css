@@ -17,9 +17,14 @@ coral: red lighten-1 #ef5350
   display: none;
 }
 
+#materialbox-overlay {
+  display: none !important;
+}
+
 .side-nav {
   margin-top: 56px !important;
   overflow-x: visible !important;
+  overflow: visible !important;
 }
 
 .side-nav li {
@@ -33,7 +38,8 @@ coral: red lighten-1 #ef5350
 }
 
 .head-container {
-  width: inherit;
+  width: 100%;
+  position: fixed;
 }
 
 .material-icons {
