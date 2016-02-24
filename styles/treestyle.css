@@ -108,6 +108,12 @@ coral: red lighten-1 #ef5350
   stroke-width: 1.5px;
 }
 
+/*.node focalNode {
+  fill: #ef5350;
+  stroke: red;
+  stroke-width: 2px;
+}*/
+
 .link {
   fill: none;
   stroke: #ccc;
