@@ -46,11 +46,6 @@ coral: red lighten-1 #ef5350
   color: white;
 }
 
-.drag-target {
-  width: 0px !important;
-  height: 0px;
-}
-
 #search-outer-wrapper {
   padding: 10px;
 }
@@ -117,18 +112,4 @@ coral: red lighten-1 #ef5350
   fill: none;
   stroke: #ccc;
   stroke-width: 1.5px;
-}
-
-.templink {
-  fill: none;
-  stroke: red;
-  stroke-width: 3px;
-}
-
-.ghostCircle.show{
-  display:block;
-}
-
-.ghostCircle, .activeDrag .ghostCircle{
-   display: none;
 }
