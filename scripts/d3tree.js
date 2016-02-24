@@ -133,6 +133,23 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         y = -source.x0;
         x = x * scale + viewerWidth / 2;
         y = y * scale + viewerHeight / 2;
+
+        // Update the nodes…
+        node = svgGroup.selectAll("g.node")
+        // Change the circle fill depending on whether it has children and is collapsed
+        node.select("circle.nodeCircle")
+            .attr("r", 4.5)
+            // .attr("class", function(d) {
+            //   return(d.y0 == source.y0) && (d.x0 == source.x0) ? "focalNode" : "nonFocal";
+            // })
+            .style("stroke", function(d) {
+                return (d.y0 == source.y0) && (d.x0 == source.x0) ? "#d50909" : "steelblue";
+            })
+            .style("stroke-width", function(d) {
+                return (d.y0 == source.y0) && (d.x0 == source.x0) ? "3px" : "1.5px";
+            });
+
+
         d3.select('g').transition()
             .duration(duration)
             .attr("transform", "translate(" + x + "," + y + ")scale(" + scale + ")");
