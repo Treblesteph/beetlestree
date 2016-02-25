@@ -182,7 +182,7 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
     function click(d) {
         if (d3.event.defaultPrevented) return; // click suppressed
         d = toggleChildren(d);
-        toggleFocal(d);
+        // toggleFocal(d);
         update(d);
         centerNode(d);
     }
