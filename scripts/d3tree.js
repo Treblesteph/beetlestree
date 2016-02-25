@@ -139,14 +139,11 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         // Change the circle fill depending on whether it has children and is collapsed
         node.select("circle.nodeCircle")
             .attr("r", 4.5)
-            // .attr("class", function(d) {
-            //   return(d.y0 == source.y0) && (d.x0 == source.x0) ? "focalNode" : "nonFocal";
-            // })
             .style("stroke", function(d) {
-                return (d.y0 == source.y0) && (d.x0 == source.x0) ? "#d50909" : "steelblue";
+                return d == source ? "#d50909" : "steelblue";
             })
             .style("stroke-width", function(d) {
-                return (d.y0 == source.y0) && (d.x0 == source.x0) ? "3px" : "1.5px";
+                return d == source ? "3px" : "1.5px";
             });
 
 
@@ -170,11 +167,22 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         return d;
     }
 
+        // Toggle focalNode function.
+
+    function toggleFocal(d) {
+          if (d3.select(d).classed("focalNode")) {
+            d3.select(d).classed("focalNode", false)
+          } else {
+            d3.select(d).classed("focalNode", true)
+          }
+    }
+
     // Toggle children on click.
 
     function click(d) {
         if (d3.event.defaultPrevented) return; // click suppressed
         d = toggleChildren(d);
+        toggleFocal(d);
         update(d);
         centerNode(d);
     }
