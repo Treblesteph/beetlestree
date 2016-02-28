@@ -134,6 +134,8 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         x = x * scale + viewerWidth / 2;
         y = y * scale + viewerHeight / 2;
 
+        console.log(source)
+
         // Update the nodes…
         node = svgGroup.selectAll("g.node")
         // Change the circle fill depending on whether it has children and is collapsed
@@ -167,22 +169,11 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         return d;
     }
 
-        // Toggle focalNode function.
-
-    function toggleFocal(d) {
-          if (d3.select(d).classed("focalNode")) {
-            d3.select(d).classed("focalNode", false)
-          } else {
-            d3.select(d).classed("focalNode", true)
-          }
-    }
-
     // Toggle children on click.
 
     function click(d) {
         if (d3.event.defaultPrevented) return; // click suppressed
         d = toggleChildren(d);
-        // toggleFocal(d);
         update(d);
         centerNode(d);
     }
