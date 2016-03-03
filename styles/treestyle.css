@@ -7,6 +7,10 @@ orange: deep-orange lighten-1 #ff7043
 coral: red lighten-1 #ef5350
 */
 
+#tree-container {
+  font-weight: lighter !important;
+}
+
 .top-nav {
   box-shadow: none;
   color: #fff;
