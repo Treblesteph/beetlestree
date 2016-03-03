@@ -125,6 +125,15 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         }
     }
 
+    // Multi-collapse function.
+
+    function collapseAll(label) {
+      d3.selectAll("g.node")
+        .each(function(d){
+          if (d.label === label) collapse(d)
+        })
+    }
+
     // Function to center node when clicked/dropped so node doesn't get lost when collapsing/moving with large amount of children.
 
     function centerNode(source) {
@@ -138,7 +147,7 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
 
         // Update the nodes…
         node = svgGroup.selectAll("g.node")
-        // Change the circle fill depending on whether it has children and is collapsed
+        // Change the circle fill depending on whether it is the focal node
         node.select("circle.nodeCircle")
             .attr("r", 4.5)
             .style("stroke", function(d) {
