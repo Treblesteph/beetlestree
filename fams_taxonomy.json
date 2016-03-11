@@ -3,7 +3,7 @@
   "label": "order",
   "children": [
     { "name": "Archostemata",
-      "label": "sub order",
+      "label": "suborder",
       "children": [
         { "name": "Crowsoniellidae",
           "label": "family",
@@ -23,7 +23,7 @@
       ]
     },
     { "name": "Myxophaga",
-      "label": "sub order",
+      "label": "suborder",
       "children": [
         { "name": "Lepiceridae",
           "label": "family",
@@ -40,7 +40,7 @@
       ]
     },
     { "name": "Adephaga",
-      "label": "sub order",
+      "label": "suborder",
       "children": [
         { "name": "Gyrinidae",
           "label": "family",
@@ -78,13 +78,13 @@
       ]
     },
     { "name": "Polyphaga",
-      "label": "sub order",
+      "label": "suborder",
       "children": [
         { "name": "Staphyliniformia",
-          "label": "infra order",
+          "label": "infraorder",
           "children": [
             { "name": "Hydrophiloidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Hydrophilidae",
                   "label": "family",
@@ -101,7 +101,7 @@
               ]
             },
             { "name": "Staphylinoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Hydraenidae",
                   "label": "family",
@@ -126,10 +126,10 @@
           ]
         },
         { "name": "Scarabaeiformia",
-          "label": "infra order",
+          "label": "infraorder",
           "children": [
             { "name": "Scarabaeoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Pleocomidae",
                   "label": "family",
@@ -172,10 +172,10 @@
           ]
         },
         { "name": "Elateriformia",
-          "label": "infra order",
+          "label": "infraorder",
           "children": [
             { "name": "Scirtoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Decliniidae",
                   "label": "family",
@@ -192,7 +192,7 @@
               ]
             },
             { "name": "Dascilloidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Dascillidae",
                   "label": "family",
@@ -203,7 +203,7 @@
               ]
             },
             { "name": "Buprestoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Schizopodidae",
                   "label": "family",
@@ -214,7 +214,7 @@
               ]
             },
             { "name": "Byrrhoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Byrrhidae",
                   "label": "family",
@@ -258,7 +258,7 @@
               ]
             },
             { "name": "Elateroidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Rhinorhipidae",
                   "label": "family",
@@ -316,10 +316,10 @@
           ]
         },
         { "name": "Derodontiformia",
-          "label": "infra order",
+          "label": "infraorder",
           "children": [
             { "name": "Derodontoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Derodontidae",
                   "label": "family",
@@ -335,10 +335,10 @@
           ]
         },
         { "name": "Bostrichiformia",
-          "label": "infra order",
+          "label": "infraorder",
           "children": [
             { "name": "Bostrichoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Dermestidae",
                   "label": "family",
@@ -357,10 +357,10 @@
           ]
         },
         { "name": "Cucujiformia",
-          "label": "infra order",
+          "label": "infraorder",
           "children": [
             { "name": "Lymexyloidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Lymexylidae",
                   "label": "family",
@@ -368,7 +368,7 @@
               ]
             },
             { "name": "Cleroidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Phloiophilidae",
                   "label": "family",
@@ -406,7 +406,7 @@
               ]
             },
             { "name": "Cucujoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Boganiidae",
                   "label": "family",
@@ -519,7 +519,7 @@
               ]
             },
             { "name": "Tenebrionoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Mycetophagidae",
                   "label": "family",
@@ -608,7 +608,7 @@
               ]
             },
             { "name": "Chrysomeloidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Oxypeltidae",
                   "label": "family",
@@ -634,7 +634,7 @@
               ]
             },
             { "name": "Curculionoidea",
-              "label": "super family",
+              "label": "superfamily",
               "children": [
                 { "name": "Nemonychidae",
                   "label": "family",
