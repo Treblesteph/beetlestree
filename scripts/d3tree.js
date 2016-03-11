@@ -129,14 +129,18 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
 
     function collapseAll(label) {
       d3.selectAll("g.node")
-              .each(function(d){
-                console.log(d.label);
-                if (d.label === label) {
-                  collapse(d);
-                } else if (label === "all") {
-                  collapse(d)
-                }
-              })
+        .each(function(d){
+          console.log("d.label:")
+          console.log(d.label);
+          console.log("label:")
+          console.log(label)
+          if (d.label === label) {
+              console.log("same")
+              collapse(d);
+          } else if (label === "all") {
+              collapse(d)
+          }
+        })
     }
 
     // Collapse in response to pressing tree tools buttons
@@ -144,14 +148,15 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
     document.getElementById("collapseall").onclick = function() {
       collapseAll("all");
     }
-    document.getElementById("collapsesuborders").onclick = collapseAll("sub order");
-    document.getElementById("collapseinfraorders").onclick = collapseAll("infra order");
-    document.getElementById("collapsesuperfamilies").onclick = collapseAll("super family");
-
-    $("#collapseall").bind('click', collapseAll("all"));
-    $("#collapsesuborders").bind('click', collapseAll("sub order"));
-    $("#collapseinfraorders").bind('click', collapseAll("infra order"));
-    $("#collapsesuperfamilies").bind('click', collapseAll("super family"));
+    document.getElementById("collapsesuborders").onclick = function () {
+      collapseAll("suborder");
+    }
+    document.getElementById("collapseinfraorders").onclick = function () {
+      collapseAll("infraorder");
+    }
+    document.getElementById("collapsesuperfamilies").onclick = function () {
+      collapseAll("superfamily");
+    }
 
     // Function to center node when clicked/dropped so node doesn't get lost when collapsing/moving with large amount of children.
 
@@ -161,8 +166,6 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         y = -source.x0;
         x = x * scale + viewerWidth / 2;
         y = y * scale + viewerHeight / 2;
-
-        console.log(source)
 
         // Update the nodes…
         node = svgGroup.selectAll("g.node")
