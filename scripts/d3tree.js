@@ -109,12 +109,20 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
 
     // Helper functions for collapsing and expanding nodes.
 
+    // function collapse(d) {
+    //   if (d.children) {
+    //       d._children = d.children;
+    //       d._children.forEach(collapse);
+    //       d.children = null;
+    //   }
+    // }
+
     function collapse(d) {
-        if (d.children) {
-            d._children = d.children;
-            d._children.forEach(collapse);
-            d.children = null;
-        }
+      if (d.children) {
+          d._children = d.children;
+          d.children = null;
+      }
+      return d;
     }
 
     function expand(d) {
@@ -130,15 +138,15 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
     function collapseAll(label) {
       d3.selectAll("g.node")
         .each(function(d){
-          console.log("d.label:")
-          console.log(d.label);
-          console.log("label:")
-          console.log(label)
           if (d.label === label) {
               console.log("same")
               collapse(d);
+              update(d)
+              centerNode(d)
           } else if (label === "all") {
-              collapse(d)
+              collapse(d);
+              update(d)
+              centerNode(d)
           }
         })
     }
