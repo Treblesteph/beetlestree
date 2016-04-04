@@ -183,6 +183,10 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
             .classed("focalNode", function(d) {
               return d == source;
             });
+        node.select("text")
+            .style("font-weight", function(d) {
+              return d == source ? 700 : 200;
+            });
 
         d3.select('g').transition()
             .duration(duration)
