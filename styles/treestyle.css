@@ -106,14 +106,60 @@ coral: red lighten-1 #ef5350
   background-color:#EEE;
 }
 
-.node circle {
+#order-full {
+  fill: #afb42b;
+  stroke-width: 0px;
+}
+
+#order-empty {
   fill: #fff;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+  stroke: #afb42b;
+}
+
+#suborder-full {
+  fill: #ffd54f;
+  stroke-width: 0px;
+}
+
+#suborder-empty {
+  fill: #fff;
+  stroke: #ffd54f;
+}
+
+#infraorder-full {
+  fill: #ff7043;
+  stroke-width: 0px;
+}
+
+#infraorder-empty {
+  fill: #fff;
+  stroke: #ff7043;
+}
+
+#superfamily-full {
+  fill: #ef5350;
+  stroke-width: 0px;
+}
+
+#superfamily-empty {
+  fill: #fff;
+  stroke: #ef5350;
+}
+
+#family-full {
+  fill: #00695c;
+  stroke-width: 0px;
+}
+
+#family-empty {
+  fill: #fff;
+  stroke: #00695c;
 }
 
 .focalNode {
-  fill: red;
+  stroke-width: 3px !important;
+  stroke: red !important;
+  fill: red !important;
 }
 
 .link {

@@ -180,13 +180,9 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         // Change the circle fill depending on whether it is the focal node
         node.select("circle.nodeCircle")
             .attr("r", 4.5)
-            .style("stroke", function(d) {
-                return d == source ? "#d50909" : "steelblue";
-            })
-            .style("stroke-width", function(d) {
-                return d == source ? "3px" : "1.5px";
+            .classed("focalNode", function(d) {
+              return d == source;
             });
-
 
         d3.select('g').transition()
             .duration(duration)
@@ -266,8 +262,8 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         nodeEnter.append("circle")
             .attr('class', 'nodeCircle')
             .attr("r", 0)
-            .style("fill", function(d) {
-                return d._children ? "lightsteelblue" : "#fff";
+            .attr("id", function(d) {
+                return d._children ? d.label + "-full" : d.label + "-empty";
             });
 
         nodeEnter.append("text")
@@ -299,8 +295,8 @@ treeJSON = d3.json("fams_taxonomy.json", function(error, treeData) {
         // Change the circle fill depending on whether it has children and is collapsed
         node.select("circle.nodeCircle")
             .attr("r", 4.5)
-            .style("fill", function(d) {
-                return d._children ? "lightsteelblue" : "#fff";
+            .attr("id", function(d) {
+              return d._children ? d.label + "-full" : d.label + "-empty";
             });
 
         // Transition nodes to their new position.
